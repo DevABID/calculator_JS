@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <form name="form">
+    <div class="display">
+      <input type="text" placeholder="" name="displayResult" id="Myresult" />
+    </div>
+      <div class="buttons">
+        <div class="row">
+        <input type="button" name="b7" value="7" onclick="calculator('7')">
+          <input type="button" name="b8" value="8" onclick="calculator('8')">
+          <input type="button" name="b9" value="9" onclick="calculator('9')">
+          <input type="button" name="addb" value="+" onclick="calculator('+')">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b4" value="4" onclick="calculator('4')">
+          <input type="button" name="b5" value="5" onclick="calculator('5')">
+          <input type="button" name="b6" value="6" onclick="calculator('6')">
+          <input type="button" name="subb" value="-" onclick="calculator('-')">
+        </div>
+         
+        <div class="row">
+        <input type="button" name="b1" value="1" onclick="calculator('1')">
+          <input type="button" name="b2" value="2" onclick="calculator('2')">
+          <input type="button" name="b3" value="3" onclick="calculator('3')">
+          <input type="button" name="mulb" value="*" onclick="calculator('*')">
+        </div>
+        
+        <div class="row">
+        <input type="button" name="b0" value="0" onclick="calculator('0')">
+          <input type="button" name="potb" value="." onclick="calculator('.')">
+          <input type="button" name="divb" value="/" onclick="calculator('/')">
+          <input type="button" class="red" value="C" onclick="Clear('C')">
+        </div>
+        <div class="row">
+        <input type="button" class="Clear" style="border-radius: 10%; height: 63px; width: 274px;" name="b0" value="=" onclick="Answer('=')">
+          
+        </div>
+      </div>
+    
+    </form>
+  </div>
+
+
+<script src="./app.js"></script>
+</body>
+  
+</html>
